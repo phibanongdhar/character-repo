@@ -101,3 +101,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#search-input {
+  padding: 8px;
+  text-align: center;
+}
+.search-btn {
+  background: linear-gradient(45deg, #00ffbb, #00bbff);
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
