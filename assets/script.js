@@ -36,8 +36,6 @@ function openPage(index) {
   showLoader();
   const url = `https://www.anapioficeandfire.com/api/characters/${index}`;
   $.get(url, function(data) {
-    console.log(data);
-
     let books = data.books;
     let name = data.name ? data.name : "Not Available";
     let culture = data.culture ? data.culture : "Not Available";
@@ -74,9 +72,7 @@ function openPage(index) {
       $("#books").css("display", "none");
       $("#load-img").css("display", "none");
     }
-
     hideLoader();
-
     $(".modal").css("display", "block");
   });
 }
