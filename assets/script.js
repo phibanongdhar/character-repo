@@ -92,11 +92,12 @@ function hideLoader() {
 }
 
 function searchCharacter() {
-  $(".section").empty();
+  
   let text = $("#search-input").val();
   let regex = /[A-za-z0-9]/;
   if (regex.test(text)) {
     showLoader();
+    $(".section").empty();
     const url = "https://www.anapioficeandfire.com/api/characters";
     $.get(url, function(data) {
       hideLoader();
